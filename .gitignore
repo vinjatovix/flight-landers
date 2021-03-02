@@ -5,6 +5,7 @@ node_modules
 avatars
 tmp
 .vscode
+templates
 
 # environements
 .env
