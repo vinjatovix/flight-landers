@@ -1,0 +1,304 @@
+
+.modal-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: grid;
+  height: 100vh;
+  left: 0;
+  place-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+.modal {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  max-width: 500px;
+  overflow: auto;
+  width: 90vw;
+}
+.modal-container {
+  margin: 2rem;
+}
+
+.modal-container form > label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.modal-button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: 'atkinson';
+  margin: 0.5rem;
+  padding: 0.25rem;
+  width: 100px;
+}
+.close-button {
+  background-color: red;
+}
+.submit-button {
+  background-color: rgb(10, 236, 10);
+}
+
+.inputfile + label {
+  color: black;
+}
+
+.inputfile + label figure {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  height: 100px;
+  margin: 0 auto 10px;
+  padding: 20px;
+  width: 100px;
+}
+
+.inputfile + label svg {
+  fill: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.container-input {
+  border-radius: 6px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.inputfile {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.inputfilelabel {
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.modal-header {
+  display: flex;
+}
+.modal-header__logo {
+  background-color: rgb(0, 118, 228);
+  display: flex;
+  flex-grow: 1;
+}
+.modal-header__logo > * {
+  font-size: 24px;
+  padding-top: 0.2rem;
+}
+.modal-header__logo :first-child {
+  background: url('../../assets/svg/plane-arrival-solid.svg') no-repeat;
+  height: 30px;
+  margin: 0.25rem 0.25rem 0 0.25rem;
+  width: 30px;
+}
+.modal-header__logo :last-child {
+  color: #f7f7f7;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0.3rem 0 0 0.25rem;
+}
+.modal-header__id {
+  align-items: center;
+  background-color: yellow;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.modal-main__towns {
+  margin: 0.5rem 0.75rem 0 0.75rem;
+}
+.modal-main__towns-cities {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-main__towns-iata {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-main__towns-cities > * {
+  font-weight: 100;
+  max-width: 100px;
+  padding: 0;
+}
+.modal-main__info {
+  background-color: #b4b4b4;
+}
+.modal-main__info-picture {
+  display: flex;
+  padding: 0.25rem 0;
+}
+.modal-main__info-picture > * {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 50px;
+  transform: rotate(45deg);
+}
+.modal-main__info-picture-line {
+  background-image: url('../../assets/svg/linea.svg');
+  background-size: 3rem;
+  flex-grow: 2;
+}
+.modal-main__info-picture-plane {
+  background-image: url('../../assets/svg/avion.svg');
+  background-size: 2.5rem;
+  flex-grow: 1.75;
+}
+.modal-main__info-data {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-main__info-data > * {
+  padding: 0.5rem;
+}
+.modal-main__info-data-arr * {
+  text-align: end;
+}
+.modal-main__info-data-dep :first-child,
+.modal-main__info-data-arr :first-child {
+  font-weight: 100;
+}
+.modal-main__info-data-dep :nth-child(2),
+.modal-main__info-data-arr :nth-child(2) {
+  margin: 0.5rem 0 0.25rem 0;
+}
+.modal-main__info-data-company {
+  align-items: flex-end;
+  display: flex;
+}
+.modal-main__info-data-company > * {
+  font-size: 12px;
+  text-align: center;
+}
+.modal-main__extra {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0.5rem 0;
+}
+.modal-main__extra * > :first-child {
+  font-weight: 100;
+}
+.modal-main__extra > * > * {
+  text-align: center;
+  padding: 0.25rem;
+}
+.modal-main__total {
+  display: flex;
+}
+.modal-main__total > * {
+  padding: 0.25rem;
+}
+.modal-main__total :first-child {
+  margin: 0 0.5rem;
+  max-width: 65vw;
+}
+.modal-main__total :last-child {
+  padding: 0.5rem;
+}
+.modal-main__total :last-child :first-child {
+  border-bottom: 1px solid black;
+  margin-left: 0.3rem;
+}
+.modal-footer {
+  margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+  .modal-header__logo :nth-child(2) {
+    font-size: 28px;
+  }
+  .modal-header__logo :last-child {
+    font-size: 22px;
+  }
+  .modal-main__towns-cities {
+    font-size: 18px;
+    margin: 0 2rem;
+  }
+  .modal-main__towns-iata * {
+    font-size: 42px;
+    margin: 0 2rem;
+  }
+  .modal-main__info-picture-line {
+    background-size: 4rem;
+    height: 70px;
+  }
+  .modal-main__info-picture-plane {
+    background-size: 4rem;
+    height: 70px;
+  }
+  .modal-main__info-data * * {
+    font-size: 16px;
+  }
+  .modal-main__info-data-company > * {
+    font-size: 14px;
+  }
+  .modal-main__extra * * {
+    font-size: 16px;
+  }
+  .modal-main__total *,
+  .modal-main__total * * {
+    font-size: 16px;
+  }
+}
+
+/* DELETE ACCOUNT */
+
+.delete-account :first-child {
+  font-size: 26px;
+  margin: 1rem;
+  text-align: center;
+}
+.delete-account :last-child {
+  font-size: 12px;
+  font-weight: 100;
+  margin: 1rem;
+  text-align: center;
+}
+
+.update-error {
+  color: red;
+}
+
+form label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#update-nickname {
+  margin: 1rem 0;
+}
+
+#update-bio {
+  margin: 1rem 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-close {
+  background-color: rgb(255, 10, 10);
+}
+
+.button-submit {
+  background-color: rgb(22, 209, 22);
+}

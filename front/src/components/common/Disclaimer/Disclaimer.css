@@ -1,0 +1,14 @@
+.Disclaimer {
+  background-color: #fff;
+  margin: 3rem 2rem;
+  max-width: 600px;
+  overflow: auto;
+  padding: 2rem;
+}
+.Disclaimer__section {
+  display: grid;
+  gap: 0.3rem;
+  justify-items: center;
+  padding: 1rem;
+  text-align: justify;
+}

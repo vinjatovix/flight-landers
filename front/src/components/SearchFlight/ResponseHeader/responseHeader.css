@@ -1,0 +1,110 @@
+.Response-header {
+  align-self: flex-start;
+  background-color: rgba(255, 255, 255, 0.829);
+  border-radius: 0.4rem;
+  display: grid;
+  grid-template-areas: 'air filter' 'date filter';
+  grid-template-columns: 3.3fr 2fr;
+  margin: 1rem 0;
+  max-width: 90vw;
+  padding: 0.2rem;
+}
+.Response__airports {
+  display: flex;
+  font-size: 1.8rem;
+  grid-area: air;
+  justify-content: space-between;
+}
+.Response__dates {
+  display: flex;
+  font-size: 1rem;
+  gap: 1rem;
+  grid-area: date;
+  justify-content: space-around;
+}
+
+.Response__filters {
+  display: flex;
+  grid-area: filter;
+  height: auto;
+  justify-content: space-evenly;
+}
+.Response-filter__stops {
+  background-image: url('../../../assets/svg/route-solid.svg');
+}
+.Response-filter__duration {
+  background-image: url('../../../assets/svg/stopwatch-solid.svg');
+}
+.Response-filter__price {
+  background-image: url('../../../assets/svg/funnel-dollar-solid.svg');
+}
+
+.filter {
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+  border-radius: 4px;
+  height: 100%;
+  width: 33%;
+}
+.active {
+  animation: blink 2s infinite cubic-bezier(0.075, 0.82, 0.8, 0.5);
+  display: block;
+  background-color: #b6b90694;
+  box-shadow: inset 0px 0px 10px black, inset -2px 0px 20px #bdc91acc;
+}
+@keyframes blink {
+  0% {
+    background-color: #b6b90694;
+  }
+  50% {
+    background-color: #d4772a91;
+  }
+}
+.sort {
+  border-bottom: 3px dashed black;
+}
+.reverse {
+  border-top: 3px dashed black;
+}
+.roundTrip-icon {
+  background-image: url('../../../assets/svg/exchange-alt-solid.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  width: 20%;
+}
+.pencil-icon {
+  background-image: url('../../../assets/svg/pen-solid.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  width: 20%;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .Response-header {
+    margin-top: 1.5rem;
+    padding: 0.3rem;
+  }
+  .filter {
+    background-size: 2rem;
+  }
+  .Response__airports {
+    font-size: 32px;
+  }
+  .Response__dates {
+    font-size: 20px;
+  }
+  .roundTrip-icon {
+    background-size: 1.7rem;
+  }
+  .pencil-icon {
+    background-size: 1.5rem;
+  }
+}

@@ -1,0 +1,20 @@
+const apiUrl = process.env.REACT_APP_BENDER_HOST;
+
+export const path = {
+  logIn: `${apiUrl}/logIn`,
+  about: `${apiUrl}/about`,
+  signIn: `${apiUrl}/signIn`,
+  flights: `${apiUrl}/search/flights`,
+  me: `${apiUrl}/me`,
+};
+
+export const searchProps = {
+  title: 'Buscador',
+  endPoint: path.flights,
+};
+export const aboutProps = {
+  action: path.about,
+};
+export const meProps = {
+  action: path.me,
+};

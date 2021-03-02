@@ -1,0 +1,106 @@
+.Response {
+  max-width: 700px;
+}
+
+.Response-empty {
+  background-image: url('../../../assets/svg/wind.svg');
+  background-position: 55vw 1vh;
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+}
+.Response-list {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 700px;
+  width: 90vw;
+}
+.hide {
+  display: none;
+}
+.Flight {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 2px groove rgba(40, 68, 161, 0.418);
+  display: grid;
+  grid-template-areas: 'itinerary offer' 'itinerary offer';
+  grid-template-columns: 3.5fr 1fr;
+  padding: 1rem 0.8rem;
+}
+
+.Itinerary__offer-price {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  grid-area: offer;
+  justify-content: center;
+}
+
+.Itinerary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.Itinerary > * {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.Itinerary__airports {
+  font-size: 13px;
+}
+
+.Itinerary__booking-trigger {
+  animation: glow 2s infinite var(--animation-time) linear;
+  background-image: url('../../../assets/svg/heart-regular.svg');
+  background-repeat: no-repeat;
+  height: 2rem;
+  margin: 0.5rem 0;
+  width: 2rem;
+}
+.stops1 {
+  background-image: url('../../../assets/svg/stop1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+}
+.stops2 {
+  background-image: url('../../../assets/svg/stop2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+}
+
+@media (min-width: 600px) {
+  .Itinerary__offer-price {
+    font-size: 1.3rem;
+  }
+  .Itinerary__booking-trigger {
+    height: 2.25rem;
+    margin: 1rem 0;
+    width: 2.25rem;
+  }
+  .Itinerary > * {
+    font-size: 20px;
+  }
+  .Itinerary__airports {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  .Itinerary__offer-price {
+    font-size: 1.4rem;
+  }
+  .Itinerary__booking-trigger {
+    height: 2.5rem;
+    margin: 1.5rem 0;
+    width: 2.5rem;
+  }
+  .Itinerary > * {
+    font-size: 24px;
+  }
+  .Itinerary__airports {
+    font-size: 20px;
+  }
+}
