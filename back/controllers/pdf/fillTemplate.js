@@ -64,7 +64,7 @@ function fillTemplate(bookingCache) {
             <br/>
             <hr/>
             <h1>DISCLAIMER:</h1>
-            <p>Aunque los datos de los vuelos son reales, esta aplicación es una simple demostración de los conocimientos adquiridos por Mateo Codesido y Pablo Viña durante el bootcamp JSB07CO de Hack A Boss en 2020/2021.</p>
+            <p>Aunque los datos de los vuelos son reales, esta aplicación es una simple demostración de los conocimientos adquiridos por Mateo Codesido y Pablo Viña.</p>
             <p>Esta reserva no tiene valor real. Ni nos hacemos responsables del uso indebido de la aplicación.</p>
           </footer>
         </body>
